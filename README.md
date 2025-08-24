@@ -1,4 +1,4 @@
-# 📦 react-daily-calorie-intake
+## 📦 react-daily-calorie-intake
 
 A lightweight **TypeScript/React library** to calculate **daily calorie needs and macronutrient splits** (protein, carbs, fats) using the **Mifflin-St Jeor formula** and activity multipliers.  
 
@@ -12,7 +12,7 @@ Perfect for fitness apps, diet planners, or any React project that needs calorie
 
 ---
 
-# 🚀 Installation
+## 🚀 Installation
 
 ```bash
 npm install react-daily-calorie-intake
@@ -22,7 +22,7 @@ or
 ```
 yarn add react-daily-calorie-intake
 ```
-# 🛠 Usage in React
+## 🛠 Usage in React
 ```
 import React from "react";
 import { calculateCalories } from "react-daily-calorie-intake";
@@ -50,7 +50,7 @@ export default function App() {
   );
 }
 ````
-# 📊 Example Output
+## 📊 Example Output
 
 For a 25-year-old male, 170 lbs, 5’10”, moderate activity, and goal = lose 1 lb per week:
 ```
@@ -67,7 +67,7 @@ For a 25-year-old male, 170 lbs, 5’10”, moderate activity, and goal = lose 1
 }
 ```
 
-# 🧾 Input Parameters
+## 🧾 Input Parameters
 ```
 {
   weight_lbs: 170,     // body weight in pounds
