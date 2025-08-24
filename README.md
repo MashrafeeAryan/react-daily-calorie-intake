@@ -1,28 +1,28 @@
-📦 react-daily-calorie-intake
+# 📦 react-daily-calorie-intake
 
-A lightweight TypeScript/React library to calculate daily calorie needs and macronutrient splits (protein, carbs, fats) using the Mifflin-St Jeor formula and activity multipliers.
+A lightweight **TypeScript/React library** to calculate **daily calorie needs and macronutrient splits** (protein, carbs, fats) using the **Mifflin-St Jeor formula** and activity multipliers.  
 
-It helps you quickly estimate:
+It helps you quickly estimate:  
+- **BMR (Basal Metabolic Rate)** → calories your body needs at rest  
+- **Maintenance calories** → calories needed to maintain current weight  
+- **Adjusted calories** → based on fitness goal (lose, maintain, gain)  
+- **Macronutrient split** → protein, carbs, fats in grams  
 
-BMR (Basal Metabolic Rate) → calories your body needs at rest
+Perfect for fitness apps, diet planners, or any React project that needs calorie and nutrition tracking.  
 
-Maintenance calories → calories needed to maintain current weight
+---
 
-Adjusted calories → based on fitness goal (lose, maintain, gain)
+## 🚀 Installation
 
-Macronutrient split → protein, carbs, fats in grams
-
-Perfect for fitness apps, diet planners, or any React project that needs calorie and nutrition tracking.
-
-🚀 Installation
+```bash
 npm install react-daily-calorie-intake
-
 
 or
 
 yarn add react-daily-calorie-intake
 
-🛠 Usage in React
+## 🛠 Usage in React
+
 import React from "react";
 import { calculateCalories } from "react-daily-calorie-intake";
 
@@ -49,10 +49,9 @@ export default function App() {
   );
 }
 
-📊 Example Output
+## 📊 Example Output
 
 For a 25-year-old male, 170 lbs, 5’10”, moderate activity, and goal = lose 1 lb per week:
-
 {
   "bmr": 1800,
   "maintenance": 2790,
@@ -65,7 +64,8 @@ For a 25-year-old male, 170 lbs, 5’10”, moderate activity, and goal = lose 1
   }
 }
 
-🧾 Input Parameters
+
+## 🧾 Input Parameters
 {
   weight_lbs: 170,     // body weight in pounds
   ageYears: 25,        // age in years
@@ -74,45 +74,11 @@ For a 25-year-old male, 170 lbs, 5’10”, moderate activity, and goal = lose 1
   activityLevel: "moderate" // sedentary, light, moderate, active, very_active
 }
 
-Activity Levels Explained
+| Level           | Multiplier | Description                                                                                            |
+| --------------- | ---------- | ------------------------------------------------------------------------------------------------------ |
+| **Sedentary**   | 1.2        | Little or no exercise, mostly sitting (desk job, minimal movement).                                    |
+| **Light**       | 1.375      | Light exercise 1–3 days/week (walking, casual activity, easy workouts).                                |
+| **Moderate**    | 1.55       | Moderate exercise 3–5 days/week (gym, sports, cycling, active job).                                    |
+| **Active**      | 1.725      | Hard exercise 6–7 days/week or a very physical job (construction, athletes-in-training).               |
+| **Very Active** | 1.9        | Intense exercise/training twice daily, or a physically demanding lifestyle (elite athletes, military). |
 
-The activity level adjusts your Basal Metabolic Rate (BMR) to reflect your lifestyle:
-
-Level	Multiplier	Description
-Sedentary	1.2	Little or no exercise, mostly sitting (desk job, minimal movement).
-Light	1.375	Light exercise 1–3 days/week (walking, casual activity, easy workouts).
-Moderate	1.55	Moderate exercise 3–5 days/week (gym, sports, cycling, active job).
-Active	1.725	Hard exercise 6–7 days/week or a very physical job (construction, athletes-in-training).
-Very Active	1.9	Intense exercise/training twice daily, or a physically demanding lifestyle (elite athletes, military).
-
-These multipliers are standard in nutrition science for estimating TDEE (Total Daily Energy Expenditure).
-
-⚙️ API Reference
-calculateCalories(options: CalorieOptions): CalorieResult
-
-Options (CalorieOptions):
-
-gender: "male" | "female"
-
-weight_lbs: number → weight in pounds
-
-ageYears: number → age in years
-
-heightInches: number → height in inches
-
-goals: number → -1 for weight loss, 0 for maintenance, +1 for gain
-
-activityLevel: "sedentary" | "light" | "moderate" | "active" | "very_active"
-
-Returns (CalorieResult):
-
-bmr: Basal Metabolic Rate (kcal)
-
-maintenance: Calories to maintain weight (kcal)
-
-adjustedCalories: Calories adjusted for goal (kcal)
-
-macros: { calories, protein, carbs, fat } in grams
-
-📜 License
-MIT © 2025 Mashrafee Aryan
