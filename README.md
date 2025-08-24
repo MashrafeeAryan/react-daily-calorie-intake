@@ -19,7 +19,7 @@ npm install react-daily-calorie-intake
 
 or
 
-yarn add react-daily-calorie-intake
+```yarn add react-daily-calorie-intake
 
 ## 🛠 Usage in React
 
