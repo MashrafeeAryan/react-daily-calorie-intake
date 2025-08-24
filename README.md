@@ -12,7 +12,7 @@ Perfect for fitness apps, diet planners, or any React project that needs calorie
 
 ---
 
-## 🚀 Installation
+# 🚀 Installation
 
 ```bash
 npm install react-daily-calorie-intake
@@ -22,7 +22,7 @@ or
 ```
 yarn add react-daily-calorie-intake
 ```
-## 🛠 Usage in React
+# 🛠 Usage in React
 ```
 import React from "react";
 import { calculateCalories } from "react-daily-calorie-intake";
@@ -50,7 +50,7 @@ export default function App() {
   );
 }
 ````
-## 📊 Example Output
+# 📊 Example Output
 
 For a 25-year-old male, 170 lbs, 5’10”, moderate activity, and goal = lose 1 lb per week:
 ```
@@ -87,9 +87,7 @@ For a 25-year-old male, 170 lbs, 5’10”, moderate activity, and goal = lose 1
       - (-1) → lose 1 lb per week
       - (0) → maintain weight
       - (1) → gain 1 lb per week
-# activityLevel: "sedentary" | "light" | "moderate" | "active" | "very_active"
-
-##Activity Level Explanation
+### activityLevel: "sedentary" | "light" | "moderate" | "active" | "very_active"
 | Level           | Multiplier | Description                                                                                            |
 | --------------- | ---------- | ------------------------------------------------------------------------------------------------------ |
 | **Sedentary**   | 1.2        | Little or no exercise, mostly sitting (desk job, minimal movement).                                    |
