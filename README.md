@@ -78,11 +78,11 @@ For a 25-year-old male, 170 lbs, 5’10”, moderate activity, and goal = lose 1
 }
 ```
 
-### gender: "male" | "female"
-### weight_lbs: number
-### ageYears: number
-### heightInches: number
-### goals: number
+**gender: "male" | "female"**
+**weight_lbs: number**
+**ageYears: number**
+**heightInches: number**
+**goals: number**
   - What it is: Weekly goal for weight change in pounds per week.
       - (-1) → lose 1 lb per week
       - (0) → maintain weight
