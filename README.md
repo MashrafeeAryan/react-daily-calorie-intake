@@ -77,60 +77,84 @@ For a 25-year-old male, 170 lbs, 5’10”, moderate activity, and goal = lose 1
   activityLevel: "moderate" // sedentary, light, moderate, active, very_active
 }
 ```
-
 gender: "male" | "female"
-
 What it is: Biological sex, used in the Mifflin-St Jeor formula.
+
 
 Why it matters: Men typically have higher muscle mass, which raises BMR.
 
+
 Effect: Choosing "male" usually results in a higher BMR than "female" for the same weight, height, and age.
 
-weight_lbs: number
 
+
+weight_lbs: number
 What it is: Body weight in pounds.
+
 
 Why it matters: Heavier individuals burn more energy at rest.
 
+
 Effect: Each extra pound slightly increases calorie needs.
+
 
 Example: At 170 lbs and 5’10”, BMR ≈ 1800 kcal. At 200 lbs, BMR ≈ 2000 kcal.
 
-ageYears: number
 
+
+ageYears: number
 What it is: Age in years.
+
 
 Why it matters: BMR decreases with age due to muscle loss and slower metabolism.
 
+
 Effect: Older individuals generally need fewer calories.
 
-heightInches: number
 
+
+heightInches: number
 What it is: Height in inches (70 in = 5’10”).
+
 
 Why it matters: Taller people usually have higher BMR since they have more body mass.
 
+
 Effect: Each additional inch raises daily calorie needs slightly.
 
-goals: number
 
+
+goals: number
 What it is: Weekly goal for weight change in pounds per week.
+
 
 -1 → lose 1 lb per week
 
+
 0 → maintain weight
+
 
 +1 → gain 1 lb per week
 
+
 Why it matters: 1 pound ≈ 3500 kcal.
+
 
 Effect: Adjusts calories by (goals × 3500) ÷ 7 → about ±500 kcal/day per lb.
 
-activityLevel: "sedentary" | "light" | "moderate" | "active" | "very_active"
 
+
+activityLevel: "sedentary" | "light" | "moderate" | "active" | "very_active"
 What it is: Lifestyle multiplier that adjusts BMR to estimate TDEE (Total Daily Energy Expenditure).
 
+
 Why it matters: Physical activity drastically changes daily calorie needs.
+
+
+Options:
+
+
+
 ```
 | Level           | Multiplier | Description                                                                                            |
 | --------------- | ---------- | ------------------------------------------------------------------------------------------------------ |
