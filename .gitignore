@@ -1,0 +1,15 @@
+# Node
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Build output
+dist/
+
+# Env files
+.env
+.env.local
+
+# OS junk
+.DS_Store
+Thumbs.db

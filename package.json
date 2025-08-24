@@ -1,0 +1,45 @@
+{
+  "name": "react-daily-calorie-intake",
+  "version": "1.0.0",
+  "description": "A lightweight TypeScript library to calculate BMR, maintenance calories, and macronutrient splits using the Mifflin-St Jeor formula and activity multipliers.",
+  "keywords": [
+    "calories",
+    "nutrition",
+    "macros",
+    "fitness",
+    "health",
+    "diet",
+    "weight-loss",
+    "muscle-gain",
+    "bmr",
+    "tdee",
+    "metabolism"
+  ],
+  "homepage": "https://github.com/MashrafeeAryan/react-daily-calorie-intake#readme",
+  "bugs": {
+    "url": "https://github.com/MashrafeeAryan/react-daily-calorie-intake/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MashrafeeAryan/react-daily-calorie-intake.git"
+  },
+  "license": "MIT",
+  "author": "Mashrafee Aryan",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "build": "tsup src/index.ts --format cjs,esm --dts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "tsup": "^8.5.0",
+    "typescript": "^5.9.2"
+  }
+}
