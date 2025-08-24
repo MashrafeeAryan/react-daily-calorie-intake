@@ -65,7 +65,7 @@ For a 25-year-old male, 170 lbs, 5’10”, moderate activity, and goal = lose 1
     "fat": 51
   }
 }
-`s``
+```
 
 # 🧾 Input Parameters
 ```
