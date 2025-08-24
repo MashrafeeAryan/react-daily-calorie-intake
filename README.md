@@ -16,7 +16,7 @@ Perfect for fitness apps, diet planners, or any React project that needs calorie
 
 ```bash
 npm install react-daily-calorie-intake
-
+```
 or
 
 ```yarn add react-daily-calorie-intake
